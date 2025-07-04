@@ -6404,6 +6404,10 @@ func init() {
         "org_id": {
           "type": "string"
         },
+        "org_soft_timeouts_enabled": {
+          "description": "Indication if organization soft timeouts is enabled for the cluster.",
+          "type": "boolean"
+        },
         "platform": {
           "$ref": "#/definitions/platform"
         },
@@ -7686,7 +7690,6 @@ func init() {
       "description": "Cluster finalizing stage managed by controller",
       "type": "string",
       "enum": [
-        "Waiting for finalizing",
         "Waiting for cluster operators",
         "Adding router ca",
         "Applying olm manifests",
@@ -7786,6 +7789,10 @@ func init() {
           "format": "uuid",
           "x-go-custom-tag": "gorm:\"foreignkey:Cluster\"",
           "x-nullable": true
+        },
+        "connection_timed_out": {
+          "description": "Indicate that connection to assisted service was timed out when soft timeout is enabled.",
+          "type": "boolean"
         },
         "connectivity": {
           "type": "string",
@@ -8752,6 +8759,11 @@ func init() {
         "kernel_arguments": {
           "$ref": "#/definitions/kernel_arguments"
         },
+        "openshift_version": {
+          "description": "Version of the OS image",
+          "type": "string",
+          "x-nullable": true
+        },
         "proxy": {
           "$ref": "#/definitions/proxy"
         },
@@ -8894,6 +8906,10 @@ func init() {
         "must_gather_image": {
           "description": "Must-gather images to use",
           "type": "string"
+        },
+        "notify_num_reboots": {
+          "description": "If true, notify number of reboots by assisted controller",
+          "type": "boolean"
         },
         "openshift_version": {
           "description": "Version of the OpenShift cluster.",
@@ -17044,6 +17060,10 @@ func init() {
         "org_id": {
           "type": "string"
         },
+        "org_soft_timeouts_enabled": {
+          "description": "Indication if organization soft timeouts is enabled for the cluster.",
+          "type": "boolean"
+        },
         "platform": {
           "$ref": "#/definitions/platform"
         },
@@ -18300,7 +18320,6 @@ func init() {
       "description": "Cluster finalizing stage managed by controller",
       "type": "string",
       "enum": [
-        "Waiting for finalizing",
         "Waiting for cluster operators",
         "Adding router ca",
         "Applying olm manifests",
@@ -18400,6 +18419,10 @@ func init() {
           "format": "uuid",
           "x-go-custom-tag": "gorm:\"foreignkey:Cluster\"",
           "x-nullable": true
+        },
+        "connection_timed_out": {
+          "description": "Indicate that connection to assisted service was timed out when soft timeout is enabled.",
+          "type": "boolean"
         },
         "connectivity": {
           "type": "string",
@@ -19368,6 +19391,11 @@ func init() {
         "kernel_arguments": {
           "$ref": "#/definitions/kernel_arguments"
         },
+        "openshift_version": {
+          "description": "Version of the OS image",
+          "type": "string",
+          "x-nullable": true
+        },
         "proxy": {
           "$ref": "#/definitions/proxy"
         },
@@ -19510,6 +19538,10 @@ func init() {
         "must_gather_image": {
           "description": "Must-gather images to use",
           "type": "string"
+        },
+        "notify_num_reboots": {
+          "description": "If true, notify number of reboots by assisted controller",
+          "type": "boolean"
         },
         "openshift_version": {
           "description": "Version of the OpenShift cluster.",
