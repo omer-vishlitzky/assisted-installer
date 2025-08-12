@@ -88,7 +88,7 @@ github.com/coreos/vcontext/validate
 # github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
 ## explicit
 github.com/davecgh/go-spew/spew
-# github.com/docker/cli v20.10.14+incompatible
+# github.com/docker/cli v20.10.21+incompatible
 ## explicit
 github.com/docker/cli/cli/compose/interpolation
 github.com/docker/cli/cli/compose/loader
@@ -197,10 +197,10 @@ github.com/gogo/protobuf/sortkeys
 # github.com/golang-jwt/jwt v3.2.2+incompatible
 ## explicit
 github.com/golang-jwt/jwt
-# github.com/golang-jwt/jwt/v4 v4.5.0
+# github.com/golang-jwt/jwt/v4 v4.5.2
 ## explicit; go 1.16
 github.com/golang-jwt/jwt/v4
-# github.com/golang/glog v1.1.2
+# github.com/golang/glog v1.2.5
 ## explicit; go 1.19
 github.com/golang/glog
 github.com/golang/glog/internal/logsink
@@ -419,7 +419,7 @@ github.com/openshift/api/operator/v1alpha1
 # github.com/openshift/assisted-installer-agent v1.0.9
 ## explicit; go 1.13
 github.com/openshift/assisted-installer-agent/pkg/journalLogger
-# github.com/openshift/assisted-service v1.0.10-0.20241216084537-3cf433eccc46
+# github.com/openshift/assisted-service v1.0.10-0.20250801144621-b7cfbf8fa8d2
 ## explicit; go 1.20
 github.com/openshift/assisted-service/internal/common
 github.com/openshift/assisted-service/internal/constants
@@ -496,7 +496,7 @@ github.com/openshift/machine-config-operator/pkg/apis/machineconfiguration.opens
 github.com/opentracing/opentracing-go
 github.com/opentracing/opentracing-go/ext
 github.com/opentracing/opentracing-go/log
-# github.com/operator-framework/api v0.17.3
+# github.com/operator-framework/api v0.17.5
 ## explicit; go 1.19
 github.com/operator-framework/api/pkg/lib/version
 github.com/operator-framework/api/pkg/operators
@@ -504,8 +504,8 @@ github.com/operator-framework/api/pkg/operators/v1
 github.com/operator-framework/api/pkg/operators/v1alpha1
 github.com/operator-framework/api/pkg/operators/v1alpha2
 github.com/operator-framework/api/pkg/operators/v2
-# github.com/operator-framework/operator-lifecycle-manager v0.22.0
-## explicit; go 1.18
+# github.com/operator-framework/operator-lifecycle-manager v0.25.0
+## explicit; go 1.19
 github.com/operator-framework/operator-lifecycle-manager/pkg/api/client/clientset/versioned/scheme
 github.com/operator-framework/operator-lifecycle-manager/pkg/api/client/clientset/versioned/typed/operators/v1alpha1
 # github.com/ory/dockertest/v3 v3.9.1
