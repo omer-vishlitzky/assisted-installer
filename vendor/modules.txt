@@ -128,6 +128,10 @@ github.com/fsnotify/fsnotify
 # github.com/ghodss/yaml v1.0.0
 ## explicit
 github.com/ghodss/yaml
+# github.com/go-jose/go-jose/v3 v3.0.4
+## explicit; go 1.12
+github.com/go-jose/go-jose/v3/cipher
+github.com/go-jose/go-jose/v3/json
 # github.com/go-logr/logr v1.2.3
 ## explicit; go 1.16
 github.com/go-logr/logr
@@ -595,7 +599,6 @@ go.opentelemetry.io/otel/semconv/v1.12.0
 go.opentelemetry.io/otel/trace
 # golang.org/x/crypto v0.31.0
 ## explicit; go 1.20
-golang.org/x/crypto/ed25519
 golang.org/x/crypto/pbkdf2
 # golang.org/x/net v0.33.0
 ## explicit; go 1.18
@@ -700,10 +703,9 @@ google.golang.org/protobuf/types/known/timestamppb
 # gopkg.in/inf.v0 v0.9.1
 ## explicit
 gopkg.in/inf.v0
-# gopkg.in/square/go-jose.v2 v2.6.0
-## explicit
+# gopkg.in/square/go-jose.v2 v2.6.0 => github.com/go-jose/go-jose/v3 v3.0.3
+## explicit; go 1.12
 gopkg.in/square/go-jose.v2
-gopkg.in/square/go-jose.v2/cipher
 gopkg.in/square/go-jose.v2/json
 # gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7
 ## explicit
@@ -1060,3 +1062,4 @@ sigs.k8s.io/yaml
 # github.com/openshift/assisted-service/models => github.com/openshift/assisted-service/models v0.0.0-20230215124228-189e234b9582
 # sigs.k8s.io/cluster-api-provider-aws => github.com/openshift/cluster-api-provider-aws v0.2.1-0.20201022175424-d30c7a274820
 # sigs.k8s.io/cluster-api-provider-azure => github.com/openshift/cluster-api-provider-azure v0.1.0-alpha.3.0.20201016155852-4090a6970205
+# gopkg.in/square/go-jose.v2 => github.com/go-jose/go-jose/v3 v3.0.3
